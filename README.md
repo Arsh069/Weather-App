@@ -5,8 +5,10 @@ and pressure.
 ![Weather3](https://github.com/Arsh069/Weather-App/assets/65395355/e1d3cbc4-55fc-4813-a5f8-f89499b5f6f8)
 
 To visit the site,
-Clone the repository and move to project directory by typing:
-cd weather-app
+Clone the repository and move to project directory by typing:<br/>
 
-In the project directory, you can run:
-npm start
+<sub>cd weather-app</sub>
+
+In the project directory, you can run:<br/>
+
+<sub>npm start</sub>
