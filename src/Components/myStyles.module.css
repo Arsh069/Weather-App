@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+
+*{
+    font-family: 'Abel', sans-serif;
+    
+}
+body{
+  background-image: url("back.jpg");
+  background-size:cover;
+}
+.mainIcon{
+  width: 90px;
+  height: 90px;
+}
+.todaysReport {
+  margin-top: 60px;
+  text-align: left; /* Align the text to the left */
+  margin-left: 100px; /* Add left margin to create space */
+}
+
+.dataContainer {
+  margin-top: 50px;
+  
+}
+
+
+.Form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cityName {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+
+
+  }
+  
+  .input {
+    padding: 10px;
+    width: 55%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-left: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+  }
+
+  .iconText{
+    font-weight: bold;
+  }
+
+
+  .infoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .feelsLikeText {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .Container{
+    margin-top: 55px;
+    position: relative;
+    margin-bottom: 300PX;
+    
+  }
+
+  .WindContainer {
+    position: absolute;
+    left: 235px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .AirContainer {
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .PUContainer {
+    position: absolute;
+    right: 235px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .iconImage{
+    width: 40px;
+    height: 45px;
+  }
+
+  .blurredCard {
+    background-color: rgba(230, 230, 230, 0.8); /* Light gray semi-transparent background */
+    backdrop-filter: blur(0%); /* Apply blur effect to the background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Adjust the width of the blurred card */
+    margin: 0 auto; /* Center the blurred card horizontally */
+  }
+  
+  
+/* Glow text*/
+.title {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+
+}
+
+/* Glow Button */
+
+.glow {
+  padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+
+  outline: none;
+  position: relative;
+
+}
+
+.glow:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow:active {
+  color: #000
+}
+
+.glow:active:after {
+  background: transparent;
+}
+
+.glow:hover:before {
+  opacity: 1;
+}
+
+.glow:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
